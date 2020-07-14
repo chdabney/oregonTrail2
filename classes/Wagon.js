@@ -2,6 +2,8 @@ class Wagon {
     constructor(capacity) {
         this.capacity = capacity
         this.passengers = []
+        this.daysTravled = 0
+
     }
 
     getAvailableSeatCount() {
@@ -28,4 +30,11 @@ class Wagon {
         // }
         // return totalFood
     }
+    //roll to determine which event function players get
+    // randomTravelEvent() {
+    //     return 1 + Math.floor(Math.random() * 20)
+    // }
+
 }
+
+
