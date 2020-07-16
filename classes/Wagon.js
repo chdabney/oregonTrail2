@@ -2,7 +2,7 @@ class Wagon {
     constructor(capacity) {
         this.capacity = capacity
         this.passengers = []
-        this.daysTravled = 0
+
 
     }
 
@@ -22,18 +22,14 @@ class Wagon {
     }
 
     totalFood() {
-        return this.passengers.reduce(passenger => passenger.food)
-        // let totalFood = 0
-        // for (let index = 0; index < this.passengers.length; index++) {
-        //     totalFood += this.passengers[index].food
+        // return this.passengers.reduce(passenger => passenger.food)
+        let totalFood = 0
+        for (let index = 0; index < this.passengers.length; index++) {
+            totalFood += this.passengers[index].food
 
-        // }
-        // return totalFood
+        }
+        return totalFood
     }
-    //roll to determine which event function players get
-    // randomTravelEvent() {
-    //     return 1 + Math.floor(Math.random() * 20)
-    // }
 
 }
 
